@@ -23,7 +23,10 @@ class HttpServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Metawesome\Http\Request');
+        $this->app->make('Metawesome\Http\ClientContract');
+        $this->app->make('Metawesome\Http\PerformsRequests');
+        $this->app->make('Metawesome\Http\Controller');
         $this->app->make('Metawesome\Http\AuthController');
+        // $this->app->make('Metawesome\Http\Request');
     }
 }
