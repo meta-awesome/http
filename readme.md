@@ -11,13 +11,13 @@ Via [composer](http://getcomposer.org):
 $ composer require metawesome/http:dev-master
 ```
 
-A seguir, adicionar o `AuthServiceProvider` ao array de `providers` em `config/app.php`:
+A seguir, adicionar o `HttpServiceProvider` ao array de `providers` em `config/app.php`:
 
 ```php
 // config/app.php
 'providers' => [
     ...
-    Metawesome\Http\AuthServiceProvider::class,
+    Metawesome\Http\HttpServiceProvider::class,
 ];
 ```
 
