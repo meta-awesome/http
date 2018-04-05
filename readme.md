@@ -31,3 +31,13 @@ Adicione as variáveis de configuração ao `.env`:
 
 * login.url
 * login.seed
+
+### Uso
+
+Adicionar em `routes/api.php`:
+
+```php
+// routes/api.php
+Route::get('/authenticate', '\Metawesome\Http\AuthController@authenticate');
+Route::get('/logout', '\Metawesome\Http\AuthController@logout');
+```
