@@ -70,7 +70,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    private function makeInvalidLoginResponse($userData = [])
+    private function makeInvalidLoginResponse()
     {
         return response()->redirectTo(config(self::LOGINURL));
     }
